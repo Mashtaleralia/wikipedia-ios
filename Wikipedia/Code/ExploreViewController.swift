@@ -2,6 +2,7 @@ import UIKit
 import WMF
 import CocoaLumberjackSwift
 import Components
+import WKData
 
 class ExploreViewController: ColumnarCollectionViewController, ExploreCardViewControllerDelegate, UISearchBarDelegate, CollectionViewUpdaterDelegate, ImageScaleTransitionProviding, DetailTransitionSourceProviding, MEPEventsProviding {
 
@@ -60,6 +61,29 @@ class ExploreViewController: ColumnarCollectionViewController, ExploreCardViewCo
         detailTransitionSourceRect = nil
         logFeedImpressionAfterDelay()
         dataStore.remoteNotificationsController.loadNotifications(force: false)
+
+        let project = WKProject.wikipedia(WKLanguage(languageCode: "cs", languageVariantCode: nil))
+        let controller = WKGrowthTasksDataController(project: project)
+        controller.getGrowthAPITask { result in
+            switch result {
+            case .success(let response):
+                print("⭐️")
+                print(response)
+                print("⭐️")
+            case .failure(let error):
+                print("OH NO \(error)")
+            }
+
+        }
+
+        controller.getImageSuggestionData(pageIDs: ["1600967", "175303"]) { result in
+            switch result {
+            case .success(let result):
+                print(result)
+            case .failure(let error):
+                print(error)
+            }
+        }
         #if UITEST
         presentUITestHelperController()
         #endif
