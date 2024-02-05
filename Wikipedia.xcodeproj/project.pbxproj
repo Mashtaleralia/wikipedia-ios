@@ -1384,6 +1384,9 @@
 		832A7A5C23EA138C00D0A750 /* ArticleViewController+References.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832A7A5A23EA138C00D0A750 /* ArticleViewController+References.swift */; };
 		832A7A5D23EA138C00D0A750 /* ArticleViewController+References.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832A7A5A23EA138C00D0A750 /* ArticleViewController+References.swift */; };
 		832A7A6023EAE03200D0A750 /* String+JavaScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832A7A5F23EAE03200D0A750 /* String+JavaScript.swift */; };
+		832B1F5A2B7134670045B9CF /* SpikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832B1F592B7134670045B9CF /* SpikeViewController.swift */; };
+		832B1F5B2B7134670045B9CF /* SpikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832B1F592B7134670045B9CF /* SpikeViewController.swift */; };
+		832B1F5C2B7134670045B9CF /* SpikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832B1F592B7134670045B9CF /* SpikeViewController.swift */; };
 		832B2B8423D9F9420087EB5F /* NSRegularExpression+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832B2B8323D9F9420087EB5F /* NSRegularExpression+Utilities.swift */; };
 		832BD3BC28996B68002623CA /* VanishAccountContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832BD3BB28996B68002623CA /* VanishAccountContentView.swift */; };
 		832BD3BD28996B68002623CA /* VanishAccountContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832BD3BB28996B68002623CA /* VanishAccountContentView.swift */; };
@@ -3771,6 +3774,7 @@
 		832289DA1F7291BA0081A5FB /* SizeThatFitsReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeThatFitsReusableView.swift; sourceTree = "<group>"; };
 		832A7A5A23EA138C00D0A750 /* ArticleViewController+References.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ArticleViewController+References.swift"; sourceTree = "<group>"; };
 		832A7A5F23EAE03200D0A750 /* String+JavaScript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+JavaScript.swift"; sourceTree = "<group>"; };
+		832B1F592B7134670045B9CF /* SpikeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpikeViewController.swift; sourceTree = "<group>"; };
 		832B2B8323D9F9420087EB5F /* NSRegularExpression+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSRegularExpression+Utilities.swift"; sourceTree = "<group>"; };
 		832BD3BB28996B68002623CA /* VanishAccountContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VanishAccountContentView.swift; sourceTree = "<group>"; };
 		8330531D23EF051900123141 /* NSArray+WMFMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+WMFMapping.m"; sourceTree = "<group>"; };
@@ -7733,6 +7737,7 @@
 				B0524B0121484F1F00D8FD8D /* Description Editing */,
 				0E26B0541C0E28E60004D687 /* Welcome */,
 				00D1F58D28885B8200127169 /* Talk Pages */,
+				832B1F592B7134670045B9CF /* SpikeViewController.swift */,
 			);
 			name = Features;
 			sourceTree = "<group>";
@@ -10334,6 +10339,7 @@
 				6780CF282967690200D45927 /* TalkPageArchivesView.swift in Sources */,
 				67C6F7AB27E8D22400B9C864 /* NotificationsCenterDetailViewModel.swift in Sources */,
 				83510B0728F4CF6400B6235B /* TalkPageErrorStateView.swift in Sources */,
+				832B1F5A2B7134670045B9CF /* SpikeViewController.swift in Sources */,
 				D850A53A1F8686DE006FD295 /* WMFThemeableNavigationController.m in Sources */,
 				B083375D1DB16A09002860D2 /* WMFWelcomePanelViewController.swift in Sources */,
 				67C6F7A627E8CB9000B9C864 /* NotificationsCenterCommonViewModel+TextExtensions.swift in Sources */,
@@ -11737,6 +11743,7 @@
 				00F5AED227C6C80C006390A8 /* PushNotificationsSettingsViewController.swift in Sources */,
 				83FBE9761F6181E00026C7EB /* ShareAFactActivityImageItemProvider.swift in Sources */,
 				0042813F25E6E841004945B3 /* NYTPhotosViewController.m in Sources */,
+				832B1F5C2B7134670045B9CF /* SpikeViewController.swift in Sources */,
 				679471DC275F245000621071 /* NotificationsCenterInboxView.swift in Sources */,
 				7A8422482268BBE70074648E /* InsertMediaImageInfoView.swift in Sources */,
 				672D69AB273ACAA100B123B3 /* UITabBarAppearance+Extensions.swift in Sources */,
@@ -12325,6 +12332,7 @@
 				00F5AED127C6C80C006390A8 /* PushNotificationsSettingsViewController.swift in Sources */,
 				D8EC3EF31E9BDA35006712EB /* WMFSettingsViewController.m in Sources */,
 				0042813E25E6E841004945B3 /* NYTPhotosViewController.m in Sources */,
+				832B1F5B2B7134670045B9CF /* SpikeViewController.swift in Sources */,
 				679471DE275F245900621071 /* NotificationsCenterInboxView.swift in Sources */,
 				7A8422492268BBE70074648E /* InsertMediaImageInfoView.swift in Sources */,
 				672D69AA273ACAA100B123B3 /* UITabBarAppearance+Extensions.swift in Sources */,

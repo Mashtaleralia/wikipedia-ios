@@ -1072,14 +1072,21 @@ extension ExploreViewController: ExploreCardCollectionViewCellDelegate {
         }
         save()
     }
-    
+
+    @objc func imageRecSpikeTest() {
+        let viewController = SpikeViewController()
+        viewController.view.backgroundColor = .green
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+
 }
 
 // MARK: - Notifications Center
 extension ExploreViewController {
 
     @objc func userDidTapNotificationsCenter() {
-        notificationsCenterPresentationDelegate?.userDidTapNotificationsCenter(from: self)
+//        notificationsCenterPresentationDelegate?.userDidTapNotificationsCenter(from: self)
+        imageRecSpikeTest()
     }
 
     @objc func pushNotificationBannerDidDisplayInForeground(_ notification: Notification) {
