@@ -1075,7 +1075,7 @@ extension ExploreViewController: ExploreCardCollectionViewCellDelegate {
 
     @objc func imageRecSpikeTest() {
         let viewController = SpikeViewController()
-        viewController.view.backgroundColor = .green
+        viewController.view.backgroundColor = .white
         navigationController?.pushViewController(viewController, animated: true)
     }
 
