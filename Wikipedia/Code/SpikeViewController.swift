@@ -18,12 +18,14 @@ final class SpikeViewController: ViewController {
         bottomVC.view.backgroundColor = .gray
         bottomVC.isModalInPresentation = true
         bottomVC.navigationItem.title = "testtttttt"
+
+        // show title
         if let sheet = bottomVC.sheetPresentationController {
 
             let id = UISheetPresentationController.Detent.Identifier(rawValue: "small")
 
             if #available(iOS 16, *) {
-                //it always opens on the smaller size
+                // it always opens on the smaller size
                 sheet.detents = [ .custom(identifier: id, resolver: { context in
                     60
                 }), .medium(), .large()]
@@ -44,7 +46,7 @@ final class SpikeViewController: ViewController {
         let vc = ViewController()
         vc.view.backgroundColor = .yellow
         // dismissing the bottom sheet is necessary to push another vc
-        if let sheet = bottomVC.sheetPresentationController {
+        if let _ = bottomVC.sheetPresentationController {
             bottomVC.isModalInPresentation = false
         }
         bottomVC.dismiss(animated: true)
@@ -56,5 +58,25 @@ final class SpikeViewController: ViewController {
 }
 
 class BottomSheetViewController: ViewController {
+
+    override func viewDidLoad() {
+        let buttonTest = UIButton(frame: CGRect(x: 0, y: 0, width: 100, height: 50))
+        buttonTest.setTitle("Test", for: .normal)
+        buttonTest.backgroundColor = .blue
+        buttonTest.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
+        self.view.addSubview(buttonTest)
+    }
+
+    @objc func buttonAction() {
+        let vc = ViewController()
+        vc.view.backgroundColor = .green
+        guard let presentingViewController else {
+            return
+        }
+        presentingViewController.dismiss(animated: true) {
+            presentingViewController.push(vc)
+        }
+
+    }
 
 }
